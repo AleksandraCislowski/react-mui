@@ -7,8 +7,10 @@ import {
   InputBase,
   Badge,
   Avatar,
+  Menu,
+  MenuItem,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import OutdoorGrillIcon from "@mui/icons-material/OutdoorGrill";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
@@ -45,6 +47,7 @@ const UserBox = styled(Box)(({ theme }) => ({
 }));
 
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <AppBar position='sticky'>
       <StyledToolbar>
@@ -66,9 +69,10 @@ const Navbar = () => {
             sx={{ width: 30, height: 30 }}
             alt='Aleksandra Cislowski'
             src={image}
+            onClick={(e) => setOpenMenu(true)}
           />
         </Icons>
-        <UserBox>
+        <UserBox onClick={(e) => setOpenMenu(true)}>
           <Avatar
             sx={{ width: 30, height: 30 }}
             alt='Aleksandra Cislowski'
@@ -77,6 +81,24 @@ const Navbar = () => {
           <Typography variant='span'>Alex</Typography>
         </UserBox>
       </StyledToolbar>
+      <Menu
+        id='demo-positioned-menu'
+        aria-labelledby='demo-positioned-button'
+        open={openMenu}
+        onClose={(e) => setOpenMenu(false)}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}
+      >
+        <MenuItem onClick={""}>Profile</MenuItem>
+        <MenuItem onClick={""}>My account</MenuItem>
+        <MenuItem onClick={""}>Logout</MenuItem>
+      </Menu>
     </AppBar>
   );
 };
