@@ -52,7 +52,7 @@ const Navbar = () => {
     <AppBar position='sticky'>
       <StyledToolbar>
         <Typography variant='h6' sx={{ display: { xs: "none", sm: "block" } }}>
-          Alex's food app
+          Alex's app
         </Typography>
         <OutdoorGrillIcon sx={{ display: { xs: "block", sm: "none" } }} />
         <Search>
