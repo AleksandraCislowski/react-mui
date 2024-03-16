@@ -6,8 +6,14 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import HomeIcon from "@mui/icons-material/Home";
 import React from "react";
+import HomeIcon from "@mui/icons-material/Home";
+import ArticleIcon from "@mui/icons-material/Article";
+import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
+import StorefrontIcon from "@mui/icons-material/Storefront";
+import PersonIcon from "@mui/icons-material/Person";
+import SettingsIcon from "@mui/icons-material/Settings";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
 
 const Sidebar = () => {
   return (
@@ -22,51 +28,51 @@ const Sidebar = () => {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component='a' href='#home'>
+          <ListItemButton component='a' href='#pages'>
             <ListItemIcon>
-              <HomeIcon />
+              <ArticleIcon />
             </ListItemIcon>
-            <ListItemText primary='Homepage' />
+            <ListItemText primary='Pages' />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component='a' href='#home'>
+          <ListItemButton component='a' href='#groups'>
             <ListItemIcon>
-              <HomeIcon />
+              <PeopleAltIcon />
             </ListItemIcon>
-            <ListItemText primary='Homepage' />
+            <ListItemText primary='Groups' />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component='a' href='#home'>
+          <ListItemButton component='a' href='#marketplace'>
             <ListItemIcon>
-              <HomeIcon />
+              <StorefrontIcon />
             </ListItemIcon>
-            <ListItemText primary='Homepage' />
+            <ListItemText primary='Marketplace' />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component='a' href='#home'>
+          <ListItemButton component='a' href='#friends'>
             <ListItemIcon>
-              <HomeIcon />
+              <PersonIcon />
             </ListItemIcon>
-            <ListItemText primary='Homepage' />
+            <ListItemText primary='Friends' />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component='a' href='#home'>
+          <ListItemButton component='a' href='#settings'>
             <ListItemIcon>
-              <HomeIcon />
+              <SettingsIcon />
             </ListItemIcon>
-            <ListItemText primary='Homepage' />
+            <ListItemText primary='Settings' />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component='a' href='#home'>
+          <ListItemButton component='a' href='#profile'>
             <ListItemIcon>
-              <HomeIcon />
+              <AccountBoxIcon />
             </ListItemIcon>
-            <ListItemText primary='Homepage' />
+            <ListItemText primary='Profile' />
           </ListItemButton>
         </ListItem>
       </List>
