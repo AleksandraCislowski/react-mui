@@ -5,6 +5,7 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Switch,
 } from "@mui/material";
 import React from "react";
 import HomeIcon from "@mui/icons-material/Home";
@@ -14,6 +15,7 @@ import StorefrontIcon from "@mui/icons-material/Storefront";
 import PersonIcon from "@mui/icons-material/Person";
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import ModeNightIcon from "@mui/icons-material/ModeNight";
 
 const Sidebar = () => {
   return (
@@ -73,6 +75,14 @@ const Sidebar = () => {
               <AccountBoxIcon />
             </ListItemIcon>
             <ListItemText primary='Profile' />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <ModeNightIcon />
+            </ListItemIcon>
+            <Switch />
           </ListItemButton>
         </ListItem>
       </List>
