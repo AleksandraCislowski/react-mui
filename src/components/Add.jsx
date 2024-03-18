@@ -1,6 +1,8 @@
 import {
   Avatar,
   Box,
+  Button,
+  ButtonGroup,
   Fab,
   Modal,
   Stack,
@@ -13,6 +15,7 @@ import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import ImageIcon from "@mui/icons-material/Image";
 import PhotoCameraFrontIcon from "@mui/icons-material/PhotoCameraFront";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import DateRangeIcon from "@mui/icons-material/DateRange";
 import { useState } from "react";
 import styled from "@emotion/styled";
 
@@ -51,7 +54,14 @@ const Add = () => {
         aria-labelledby='modal-modal-title'
         aria-describedby='modal-modal-description'
       >
-        <Box width={400} height={280} bgcolor='white' p={3} borderRadius={5}>
+        <Box
+          width={400}
+          height={280}
+          bgcolor={"background.default"}
+          color={"text.primary"}
+          p={3}
+          borderRadius={5}
+        >
           <Typography variant='h6' color='gray' textAlign='center'>
             Create post
           </Typography>
@@ -78,6 +88,16 @@ const Add = () => {
             <PhotoCameraFrontIcon color='success' />
             <PersonAddIcon color='error' />
           </Stack>
+          <ButtonGroup
+            fullWidth
+            variant='contained'
+            aria-label='Basic button group'
+          >
+            <Button>Post</Button>
+            <Button sx={{ width: "100px" }}>
+              <DateRangeIcon />
+            </Button>
+          </ButtonGroup>
         </Box>
       </StyledModal>
     </>
