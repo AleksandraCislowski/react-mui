@@ -1,6 +1,6 @@
 # Facebook inspired app
 
-This project was made to learn and practice styling with MUI. It's a Facebook inspired app with some basic posts and content. You can open a modal to create a post, or change a theme from light to dark with using just one bottom.
+This project was made to learn and practice styling with MUI. It's a Facebook inspired app with some basic posts and content. You can open a modal to create a post or change a theme from light to dark with using just one bottom.
 
 
 ## Available Scripts
